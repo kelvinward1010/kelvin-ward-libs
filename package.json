@@ -7,10 +7,9 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": ["dist"],
-  "sideEffects": false,
+  "sideEffects": ["**/*.css"],
   "scripts": {
-    "build": "tsup && cpy \"src/styles.css\" dist --rename=style.css --flat",
-    "dev": "tsup --watch",
+    "build": "vite build && cpy \"src/styles/tokens.css\" dist --rename=tokens.css --flat",
     "prepublishOnly": "npm run build"
   },
   "exports": {
@@ -19,19 +18,21 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
-    "./style.css": "./dist/style.css"
+    "./tokens.css": "./dist/tokens.css"
   },
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18"
   },
   "devDependencies": {
+    "@types/node": "^25.1.0",
     "@types/react": "^19.2.10",
     "@types/react-dom": "^19.2.3",
-    "cpy-cli": "^6.0.0",
+    "@vitejs/plugin-react": "^5.1.2",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "tsup": "^8.5.1",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vite-plugin-dts": "^4.5.4"
   }
 }

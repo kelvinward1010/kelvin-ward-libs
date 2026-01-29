@@ -1,0 +1,23 @@
+.kelvinward-input {
+  width: 100%;
+  padding: var(--kw-space-2) var(--kw-space-3);
+
+  border: 1px solid var(--kw-color-border);
+  border-radius: var(--kw-radius-md);
+
+  outline: none;
+  font-size: var(--kw-font-size);
+  color: var(--kw-color-text);
+  background: var(--kw-color-bg);
+
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.kelvinward-input:focus {
+  border-color: var(--kw-color-primary);
+  box-shadow: var(--kw-focus-ring);
+}
+
+.kelvinward-input::placeholder {
+  color: var(--kw-color-muted);
+}

@@ -1,0 +1,21 @@
+.kelvinward-btn {
+  padding: var(--kw-space-2) var(--kw-space-3);
+  border-radius: var(--kw-radius-md);
+
+  background: var(--kw-color-primary);
+  color: white;
+  border: 1px solid transparent;
+
+  font-size: var(--kw-font-size);
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.kelvinward-btn:hover {
+  background: var(--kw-color-primary-hover);
+}
+
+.kelvinward-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
