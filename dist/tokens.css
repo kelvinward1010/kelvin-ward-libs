@@ -1,0 +1,26 @@
+:root {
+  /* colors */
+  --kw-color-bg: #ffffff;
+  --kw-color-text: #0f172a;
+
+  --kw-color-primary: #0969da;
+  --kw-color-primary-hover: #0550ae;
+
+  --kw-color-border: #d0d7de;
+  --kw-color-muted: #6e7781;
+
+  /* radius */
+  --kw-radius-sm: 8px;
+  --kw-radius-md: 12px;
+
+  /* spacing */
+  --kw-space-1: 6px;
+  --kw-space-2: 10px;
+  --kw-space-3: 14px;
+
+  /* typography */
+  --kw-font-size: 14px;
+
+  /* focus */
+  --kw-focus-ring: 0 0 0 3px rgba(9, 105, 218, 0.18);
+}
