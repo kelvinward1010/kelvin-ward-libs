@@ -1,13 +1,17 @@
 {
   "name": "kelvinward-libs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
-  "sideEffects": ["**/*.css"],
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "scripts": {
     "build": "vite build && cpy \"src/styles/tokens.css\" dist --rename=tokens.css --flat",
     "prepublishOnly": "npm run build"
