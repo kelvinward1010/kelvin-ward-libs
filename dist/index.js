@@ -274,15 +274,7 @@ function se({ className: s = "", ...l }) {
 function le({ className: s = "", label: l, id: c, ...i }) {
   const o = c ?? i.name;
   return /* @__PURE__ */ d.jsxs("label", { className: `kelvinward-checkbox ${s}`, htmlFor: o, children: [
-    /* @__PURE__ */ d.jsx(
-      "input",
-      {
-        ...i,
-        id: o,
-        type: "checkbox",
-        className: "kelvinward-checkbox__input"
-      }
-    ),
+    /* @__PURE__ */ d.jsx("input", { ...i, id: o, type: "checkbox", className: "kelvinward-checkbox__input" }),
     /* @__PURE__ */ d.jsx("span", { className: "kelvinward-checkbox__box", "aria-hidden": "true" }),
     l ? /* @__PURE__ */ d.jsx("span", { className: "kelvinward-checkbox__label", children: l }) : null
   ] });
