@@ -1,38 +1,38 @@
 import ee from "react";
-var v = { exports: {} }, _ = {};
-var $;
+var p = { exports: {} }, E = {};
+var I;
 function re() {
-  if ($) return _;
-  $ = 1;
-  var o = /* @__PURE__ */ Symbol.for("react.transitional.element"), l = /* @__PURE__ */ Symbol.for("react.fragment");
-  function c(f, s, u) {
-    var d = null;
-    if (u !== void 0 && (d = "" + u), s.key !== void 0 && (d = "" + s.key), "key" in s) {
+  if (I) return E;
+  I = 1;
+  var s = /* @__PURE__ */ Symbol.for("react.transitional.element"), l = /* @__PURE__ */ Symbol.for("react.fragment");
+  function c(i, o, u) {
+    var m = null;
+    if (u !== void 0 && (m = "" + u), o.key !== void 0 && (m = "" + o.key), "key" in o) {
       u = {};
-      for (var m in s)
-        m !== "key" && (u[m] = s[m]);
-    } else u = s;
-    return s = u.ref, {
-      $$typeof: o,
-      type: f,
-      key: d,
-      ref: s !== void 0 ? s : null,
+      for (var _ in o)
+        _ !== "key" && (u[_] = o[_]);
+    } else u = o;
+    return o = u.ref, {
+      $$typeof: s,
+      type: i,
+      key: m,
+      ref: o !== void 0 ? o : null,
       props: u
     };
   }
-  return _.Fragment = l, _.jsx = c, _.jsxs = c, _;
+  return E.Fragment = l, E.jsx = c, E.jsxs = c, E;
 }
-var E = {};
-var I;
+var b = {};
+var F;
 function te() {
-  return I || (I = 1, process.env.NODE_ENV !== "production" && (function() {
-    function o(e) {
+  return F || (F = 1, process.env.NODE_ENV !== "production" && (function() {
+    function s(e) {
       if (e == null) return null;
       if (typeof e == "function")
         return e.$$typeof === Z ? null : e.displayName || e.name || null;
       if (typeof e == "string") return e;
       switch (e) {
-        case p:
+        case k:
           return "Fragment";
         case q:
           return "Profiler";
@@ -59,11 +59,11 @@ function te() {
             var r = e.render;
             return e = e.displayName, e || (e = r.displayName || r.name || "", e = e !== "" ? "ForwardRef(" + e + ")" : "ForwardRef"), e;
           case B:
-            return r = e.displayName || null, r !== null ? r : o(e.type) || "Memo";
+            return r = e.displayName || null, r !== null ? r : s(e.type) || "Memo";
           case T:
             r = e._payload, e = e._init;
             try {
-              return o(e(r));
+              return s(e(r));
             } catch {
             }
         }
@@ -89,34 +89,34 @@ function te() {
         ), l(e);
       }
     }
-    function f(e) {
-      if (e === p) return "<>";
+    function i(e) {
+      if (e === k) return "<>";
       if (typeof e == "object" && e !== null && e.$$typeof === T)
         return "<...>";
       try {
-        var r = o(e);
+        var r = s(e);
         return r ? "<" + r + ">" : "<...>";
       } catch {
         return "<...>";
       }
     }
-    function s() {
-      var e = k.A;
+    function o() {
+      var e = x.A;
       return e === null ? null : e.getOwner();
     }
     function u() {
       return Error("react-stack-top-frame");
     }
-    function d(e) {
+    function m(e) {
       if (y.call(e, "key")) {
         var r = Object.getOwnPropertyDescriptor(e, "key").get;
         if (r && r.isReactWarning) return !1;
       }
       return e.key !== void 0;
     }
-    function m(e, r) {
+    function _(e, r) {
       function t() {
-        g || (g = !0, console.error(
+        N || (N = !0, console.error(
           "%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)",
           r
         ));
@@ -127,15 +127,15 @@ function te() {
       });
     }
     function L() {
-      var e = o(this.type);
-      return h[e] || (h[e] = !0, console.error(
+      var e = s(this.type);
+      return g[e] || (g[e] = !0, console.error(
         "Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release."
       )), e = this.props.ref, e !== void 0 ? e : null;
     }
-    function M(e, r, t, n, b, A) {
+    function M(e, r, t, n, R, w) {
       var a = t.ref;
       return e = {
-        $$typeof: j,
+        $$typeof: P,
         type: e,
         key: r,
         props: t,
@@ -157,33 +157,33 @@ function te() {
         configurable: !1,
         enumerable: !1,
         writable: !0,
-        value: b
+        value: R
       }), Object.defineProperty(e, "_debugTask", {
         configurable: !1,
         enumerable: !1,
         writable: !0,
-        value: A
+        value: w
       }), Object.freeze && (Object.freeze(e.props), Object.freeze(e)), e;
     }
-    function w(e, r, t, n, b, A) {
+    function j(e, r, t, n, R, w) {
       var a = r.children;
       if (a !== void 0)
         if (n)
           if (Q(a)) {
             for (n = 0; n < a.length; n++)
-              P(a[n]);
+              A(a[n]);
             Object.freeze && Object.freeze(a);
           } else
             console.error(
               "React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead."
             );
-        else P(a);
+        else A(a);
       if (y.call(r, "key")) {
-        a = o(e);
-        var i = Object.keys(r).filter(function(K) {
+        a = s(e);
+        var f = Object.keys(r).filter(function(K) {
           return K !== "key";
         });
-        n = 0 < i.length ? "{key: someKey, " + i.join(": ..., ") + ": ...}" : "{key: someKey}", Y[a + n] || (i = 0 < i.length ? "{" + i.join(": ..., ") + ": ...}" : "{}", console.error(
+        n = 0 < f.length ? "{key: someKey, " + f.join(": ..., ") + ": ...}" : "{key: someKey}", $[a + n] || (f = 0 < f.length ? "{" + f.join(": ..., ") + ": ...}" : "{}", console.error(
           `A props object containing a "key" prop is being spread into JSX:
   let props = %s;
   <%s {...props} />
@@ -192,86 +192,103 @@ React keys must be passed directly to JSX without using spread:
   <%s key={someKey} {...props} />`,
           n,
           a,
-          i,
+          f,
           a
-        ), Y[a + n] = !0);
+        ), $[a + n] = !0);
       }
-      if (a = null, t !== void 0 && (c(t), a = "" + t), d(r) && (c(r.key), a = "" + r.key), "key" in r) {
+      if (a = null, t !== void 0 && (c(t), a = "" + t), m(r) && (c(r.key), a = "" + r.key), "key" in r) {
         t = {};
-        for (var S in r)
-          S !== "key" && (t[S] = r[S]);
+        for (var O in r)
+          O !== "key" && (t[O] = r[O]);
       } else t = r;
-      return a && m(
+      return a && _(
         t,
         typeof e == "function" ? e.displayName || e.name || "Unknown" : e
       ), M(
         e,
         a,
         t,
-        s(),
-        b,
-        A
+        o(),
+        R,
+        w
       );
     }
-    function P(e) {
-      x(e) ? e._store && (e._store.validated = 1) : typeof e == "object" && e !== null && e.$$typeof === T && (e._payload.status === "fulfilled" ? x(e._payload.value) && e._payload.value._store && (e._payload.value._store.validated = 1) : e._store && (e._store.validated = 1));
+    function A(e) {
+      S(e) ? e._store && (e._store.validated = 1) : typeof e == "object" && e !== null && e.$$typeof === T && (e._payload.status === "fulfilled" ? S(e._payload.value) && e._payload.value._store && (e._payload.value._store.validated = 1) : e._store && (e._store.validated = 1));
     }
-    function x(e) {
-      return typeof e == "object" && e !== null && e.$$typeof === j;
+    function S(e) {
+      return typeof e == "object" && e !== null && e.$$typeof === P;
     }
-    var R = ee, j = /* @__PURE__ */ Symbol.for("react.transitional.element"), W = /* @__PURE__ */ Symbol.for("react.portal"), p = /* @__PURE__ */ Symbol.for("react.fragment"), U = /* @__PURE__ */ Symbol.for("react.strict_mode"), q = /* @__PURE__ */ Symbol.for("react.profiler"), J = /* @__PURE__ */ Symbol.for("react.consumer"), V = /* @__PURE__ */ Symbol.for("react.context"), z = /* @__PURE__ */ Symbol.for("react.forward_ref"), G = /* @__PURE__ */ Symbol.for("react.suspense"), X = /* @__PURE__ */ Symbol.for("react.suspense_list"), B = /* @__PURE__ */ Symbol.for("react.memo"), T = /* @__PURE__ */ Symbol.for("react.lazy"), H = /* @__PURE__ */ Symbol.for("react.activity"), Z = /* @__PURE__ */ Symbol.for("react.client.reference"), k = R.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, y = Object.prototype.hasOwnProperty, Q = Array.isArray, O = console.createTask ? console.createTask : function() {
+    var v = ee, P = /* @__PURE__ */ Symbol.for("react.transitional.element"), W = /* @__PURE__ */ Symbol.for("react.portal"), k = /* @__PURE__ */ Symbol.for("react.fragment"), U = /* @__PURE__ */ Symbol.for("react.strict_mode"), q = /* @__PURE__ */ Symbol.for("react.profiler"), J = /* @__PURE__ */ Symbol.for("react.consumer"), V = /* @__PURE__ */ Symbol.for("react.context"), z = /* @__PURE__ */ Symbol.for("react.forward_ref"), G = /* @__PURE__ */ Symbol.for("react.suspense"), X = /* @__PURE__ */ Symbol.for("react.suspense_list"), B = /* @__PURE__ */ Symbol.for("react.memo"), T = /* @__PURE__ */ Symbol.for("react.lazy"), H = /* @__PURE__ */ Symbol.for("react.activity"), Z = /* @__PURE__ */ Symbol.for("react.client.reference"), x = v.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, y = Object.prototype.hasOwnProperty, Q = Array.isArray, h = console.createTask ? console.createTask : function() {
       return null;
     };
-    R = {
+    v = {
       react_stack_bottom_frame: function(e) {
         return e();
       }
     };
-    var g, h = {}, N = R.react_stack_bottom_frame.bind(
-      R,
+    var N, g = {}, C = v.react_stack_bottom_frame.bind(
+      v,
       u
-    )(), C = O(f(u)), Y = {};
-    E.Fragment = p, E.jsx = function(e, r, t) {
-      var n = 1e4 > k.recentlyCreatedOwnerStacks++;
-      return w(
+    )(), Y = h(i(u)), $ = {};
+    b.Fragment = k, b.jsx = function(e, r, t) {
+      var n = 1e4 > x.recentlyCreatedOwnerStacks++;
+      return j(
         e,
         r,
         t,
         !1,
-        n ? Error("react-stack-top-frame") : N,
-        n ? O(f(e)) : C
+        n ? Error("react-stack-top-frame") : C,
+        n ? h(i(e)) : Y
       );
-    }, E.jsxs = function(e, r, t) {
-      var n = 1e4 > k.recentlyCreatedOwnerStacks++;
-      return w(
+    }, b.jsxs = function(e, r, t) {
+      var n = 1e4 > x.recentlyCreatedOwnerStacks++;
+      return j(
         e,
         r,
         t,
         !0,
-        n ? Error("react-stack-top-frame") : N,
-        n ? O(f(e)) : C
+        n ? Error("react-stack-top-frame") : C,
+        n ? h(i(e)) : Y
       );
     };
-  })()), E;
+  })()), b;
 }
-var F;
+var D;
 function ne() {
-  return F || (F = 1, process.env.NODE_ENV === "production" ? v.exports = re() : v.exports = te()), v.exports;
+  return D || (D = 1, process.env.NODE_ENV === "production" ? p.exports = re() : p.exports = te()), p.exports;
 }
-var D = ne();
-function oe({ className: o = "", children: l, ...c }) {
-  return /* @__PURE__ */ D.jsx("button", { ...c, className: `kelvinward-btn ${o}`, children: l });
+var d = ne();
+function oe({ className: s = "", children: l, ...c }) {
+  return /* @__PURE__ */ d.jsx("button", { ...c, className: `kelvinward-btn ${s}`, children: l });
 }
-function se({ className: o = "", ...l }) {
-  return /* @__PURE__ */ D.jsx(
+function se({ className: s = "", ...l }) {
+  return /* @__PURE__ */ d.jsx(
     "input",
     {
       ...l,
-      className: `kelvinward-input ${o}`
+      className: `kelvinward-input ${s}`
     }
   );
 }
+function le({ className: s = "", label: l, id: c, ...i }) {
+  const o = c ?? i.name;
+  return /* @__PURE__ */ d.jsxs("label", { className: `kelvinward-checkbox ${s}`, htmlFor: o, children: [
+    /* @__PURE__ */ d.jsx(
+      "input",
+      {
+        ...i,
+        id: o,
+        type: "checkbox",
+        className: "kelvinward-checkbox__input"
+      }
+    ),
+    /* @__PURE__ */ d.jsx("span", { className: "kelvinward-checkbox__box", "aria-hidden": "true" }),
+    l ? /* @__PURE__ */ d.jsx("span", { className: "kelvinward-checkbox__label", children: l }) : null
+  ] });
+}
 export {
   oe as Button,
+  le as Checkbox,
   se as Input
 };

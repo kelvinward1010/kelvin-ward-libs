@@ -1,4 +1,5 @@
-import "./styles/tokens.css";
+import './styles/tokens.css';
 
-export * from "./components/Button";
-export * from "./components/Input";
+export * from './components/Button';
+export * from './components/Input';
+export * from './components/Checkbox';
