@@ -25,7 +25,8 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
-    "./tokens.css": "./dist/tokens.css"
+    "./tokens.css": "./dist/tokens.css",
+    "./styles.css": "./dist/index.css"
   },
   "peerDependencies": {
     "react": ">=18",
