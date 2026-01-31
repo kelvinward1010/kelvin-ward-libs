@@ -13,6 +13,9 @@
     "**/*.css"
   ],
   "scripts": {
+    "dev": "dumi dev",
+    "docs:build": "dumi build",
+    "docs:preview": "dumi preview",
     "build": "vite build && cpy \"src/styles/tokens.css\" dist --rename=tokens.css --flat",
     "prepublishOnly": "npm run build",
     "format": "prettier . --write",
@@ -39,6 +42,7 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.2",
     "cpy-cli": "^6.0.0",
+    "dumi": "^2.4.21",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "prettier": "^3.8.1",
